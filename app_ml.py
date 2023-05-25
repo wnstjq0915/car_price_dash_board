@@ -4,11 +4,7 @@ import joblib
 
 def num_comma(x):
     x_num = list(str(x))
-    comma = 0
-    if len(x_num) // 3 > 0:
-        comma += len(x_num) // 3
-        if len(x_num) % 3 == 0:
-            comma -= 1
+    comma = (len(x_num) - 1) // 3
     for i in range(comma):
         x_num.insert(-3 * (i + 1) - i, ',')
     return ''.join(x_num)

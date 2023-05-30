@@ -1,7 +1,7 @@
 import streamlit as st
 
 def fun_app_home():
-    st.subheader('환영합니다~')
+    st.subheader('환영합니다!')
     st.text('좋은 서비스로 제공하겠습니다.')
     st.text('자동 배포 처리된 앱입니다.')
 
